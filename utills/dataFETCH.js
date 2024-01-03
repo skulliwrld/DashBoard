@@ -46,7 +46,7 @@ export const fetchUserData = async (id) =>{
     }
 }
 
-export const fetchProductData = async (id) =>{
+export  const fetchProductData = async (id) =>{
     try {
         await connectToDB()
         const product = await Product.findById(id)
@@ -55,5 +55,6 @@ export const fetchProductData = async (id) =>{
         console.log(error)   
     }
 }
+ fetchProductData
 
 

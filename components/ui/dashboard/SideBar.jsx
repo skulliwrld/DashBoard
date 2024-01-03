@@ -7,7 +7,6 @@ import { MdLogout } from 'react-icons/md'
 
 async function SideBar() {
   const {user} = await auth()
-  console.log(user)
   return (
     <div className=" flex flex-col items-start">
       <div className="flex items-center gap-3 mb-2">
